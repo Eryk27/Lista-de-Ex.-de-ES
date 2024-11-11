@@ -31,15 +31,12 @@ class Data:
 
 # Programa para testar a classe Data
 data = Data(8,11,2024)
-print(f'Data atual: {data}')
-
-# Testando os métodos 
-data.set_dia(27)
-data.set_mes(9)
-data.set_ano(2025)
+print(f'Data Inicial: {data}')
+data.set_dia(27), data.set_mes(9), data.set_ano(2025)
 print(f'Nova data: {data}')
 
 #Q.2
+print('------Segunda Class------')
 class Aluno:
 #Construtor 
     def __init__ (self, matricula: int, nome: str, notas: list=[]):
@@ -72,25 +69,14 @@ class Aluno:
 
 
 # Programa para testar a classe Aluno
-aluno1 = Aluno(matricula=12345, nome="João Silva")
-
-# Testando os métodos 
+aluno1 = Aluno(matricula=12345, nome="João Silva") 
 print("Nome:", aluno1.get_nome()) 
 print("Matrícula:", aluno1.get_matricula())  
-
-# Adicionando notas e calculando a média
 aluno1.adiciona_notas(7.5)
 aluno1.adiciona_notas(8.0)
 aluno1.adiciona_notas(9.0)
-
-# Testando o método media
 print("Média das notas:", aluno1.media())  
-
-# Alterando o nome do aluno
 aluno1.set_nome("João Pedro")
 print("Novo nome:", aluno1.get_nome()) 
 
 #Q.3
-class Pais:
-    def __init__(self,):
-        
